@@ -1,9 +1,10 @@
+package arrays;
+
 // Problem: Find Maximum Element
 // Approach: Linear Traversal
 // Time Complexity: O(n)
 // Space Complexity: O(1)
 
-package arrays;
 public class MaxElement {
     public static void main(String[] args) {
         int[] arr = {3, 7, 2, 9, 5};
