@@ -33,6 +33,7 @@ public class sort012 {
     }
 
     // 🔥 Main function
+    
     public static void main(String[] args) {
 
         sort012 sol = new sort012();
