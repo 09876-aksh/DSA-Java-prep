@@ -36,63 +36,63 @@ public class MajorityElement {
 //time : o(n)
 //space : o(n)
 
-import java.util.HashMap;
+// import java.util.HashMap;
 
-public class MajorityBetter {
+// public class MajorityBetter {
 
-    public static int majorityElement(int[] nums) {
+//     public static int majorityElement(int[] nums) {
 
-        HashMap<Integer, Integer> map = new HashMap<>();
+//         HashMap<Integer, Integer> map = new HashMap<>();
 
-        int n = nums.length;
+//         int n = nums.length;
 
-        for (int num : nums) {
-            map.put(num, map.getOrDefault(num, 0) + 1);
+//         for (int num : nums) {
+//             map.put(num, map.getOrDefault(num, 0) + 1);
 
-            if (map.get(num) > n / 2) {
-                return num;
-            }
-        }
+//             if (map.get(num) > n / 2) {
+//                 return num;
+//             }
+//         }
 
-        return -1;
-    }
+//         return -1;
+//     }
 
-    public static void main(String[] args) {
-        int[] nums = {2,2,1,1,1,2,2};
-        System.out.println(majorityElement(nums));
-    }
-}
+//     public static void main(String[] args) {
+//         int[] nums = {2,2,1,1,1,2,2};
+//         System.out.println(majorityElement(nums));
+//     }
+// }
 
 
-//optimal solution
-//time : o(n)
-//space : o(1)
+// //optimal solution
+// //time : o(n)
+// //space : o(1)
 
-public class MajorityOptimal {
+// public class MajorityOptimal {
 
-    public static int majorityElement(int[] nums) {
+//     public static int majorityElement(int[] nums) {
 
-        int candidate = 0;
-        int count = 0;
+//         int candidate = 0;
+//         int count = 0;
 
-        for (int num : nums) {
+//         for (int num : nums) {
 
-            if (count == 0) {
-                candidate = num;
-            }
+//             if (count == 0) {
+//                 candidate = num;
+//             }
 
-            if (num == candidate) {
-                count++;
-            } else {
-                count--;
-            }
-        }
+//             if (num == candidate) {
+//                 count++;
+//             } else {
+//                 count--;
+//             }
+//         }
 
-        return candidate;
-    }
+//         return candidate;
+//     }
 
-    public static void main(String[] args) {
-        int[] nums = {2,2,1,1,1,2,2};
-        System.out.println(majorityElement(nums));
-    }
-}
+//     public static void main(String[] args) {
+//         int[] nums = {2,2,1,1,1,2,2};
+//         System.out.println(majorityElement(nums));
+//     }
+// }
